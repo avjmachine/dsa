@@ -7,3 +7,7 @@ tips: for recursive approach, use older pointer connections rather than traversi
 2. middle_of_the_linked_list (leetcode-876)
 approach: use two pointers, one slow and one fast pointer, fast pointer moves two steps for every step of slow pointer, when fast pointer reaches end of list, slow pointer would be at middle of list; alternative approach could be to convert to an array of linked list pointer elements and fetch element from middle index of the array
 tips: none
+
+3. merge_two_sorted_lists.cpp (leetcode-21)
+approach: maintain 2 pointers, one for each list, and also a head and a tail pointer, initialize head and tail to the list with the lower value, then keep updating tail by stepping one element at a time with the lower value, and updating the pointer on the respective linked list, till one of the lists reaches nullptr - attach whichever linked remains directly to the end
+tips: handle the corner case of one or both linked lists being empty
