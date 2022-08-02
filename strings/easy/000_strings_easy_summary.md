@@ -7,3 +7,7 @@ tips: using hashmap both directions will occupy more space, so use set for the o
 2. is_subsequence (leetcode-392)
 approach: use two pointers
 tips: check s for empty string if there are no loop constraints for the same
+
+3. longest_palindrome (leetcode-409)
+approach: use a hashmap to store count of each letter, length of palindrome is twice the number of letters in pairs plus 1 if the count is odd for any letter
+tips: None
