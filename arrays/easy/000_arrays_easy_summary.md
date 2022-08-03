@@ -11,7 +11,3 @@ tips: remember that total sum is made of 3 components (left sum + right sum + cu
 3. best_time_to_buy_and_sell_stock (leetcode-121)
 approach: initialize min buy price as first price value and max profit as 0, loop through each price and (i)calculate profit using current price and min buy price, update max profit if current profit is more than max profit; (ii)update min buy price if current price is lower than min buy price
 
-4. binary_search (leetcode-704)
-approach: textbook algorithm, create left and right variables/pointers, divide sorted list into 2 halves with mid element, check if mid is equal to target, if yes return that index, else check if target is lesser than mid, then search in left half by moving right pointer to mid-1, else if greater, then search in right half by moving left pointer to mid+1, repeat till element is found or till left crosses over right
-
-
