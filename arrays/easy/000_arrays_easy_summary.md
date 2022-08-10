@@ -15,3 +15,7 @@ tips: None
 4. max_consecutive_ones (leetcode-485)
 approach: loop through the array, on encountering ones - keep incrementing a running sum, on encountering a zero - update the MaxConsecutiveOnes variable and also reset the running sum to 0; at the end return the max among latest running sum and MaxConsectiveOnes
 tips: None
+
+5. find (leetcode-1295)
+approach: loop through each element, find no. of digits using 1+log10, check for evenness and increment counter
+tips: None
