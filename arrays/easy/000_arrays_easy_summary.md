@@ -19,3 +19,7 @@ tips: None
 5. find (leetcode-1295)
 approach: loop through each element, find no. of digits using 1+log10, check for evenness and increment counter
 tips: None
+
+6. squares_of_a_sorted_array (leetcode-977)
+approach: use two pointers, one for the negative and one for the positive group, and fill the result by comparing both, and move the pointers
+tips: rather than starting from in-between, start from the ends to avoid checking and handling of ends twice
