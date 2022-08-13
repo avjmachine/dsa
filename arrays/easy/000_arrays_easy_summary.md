@@ -23,3 +23,11 @@ tips: None
 6. squares_of_a_sorted_array (leetcode-977)
 approach: use two pointers, one for the negative and one for the positive group, and fill the result by comparing both, and move the pointers
 tips: rather than starting from in-between, start from the ends to avoid checking and handling of ends twice
+
+7. duplicate_zeros (leetcode-1089)
+//TODO
+
+
+8. average_salary_excluding_the_minimum_and_maximum_salary (leetcode-1089)
+approach: loop through each element, keep updating min and max salary, along with a cumulative sum, once end of loop is reached, calculate average by removing the min and max from both numerator and denominator
+tips: None
