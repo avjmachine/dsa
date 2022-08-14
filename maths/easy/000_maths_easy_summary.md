@@ -7,3 +7,7 @@ tips: none
 2. no_of_steps_to_reduce_a_number_to_zero (leetcode-1342)
 approach: count no. of steps to divide by 2, this is same as log2(n) and add count of no. of odd numbers encountered, this is same as no. of set bits
 tips: use built-in functions to count set bits and get the no. of steps to divide by 2, this would be faster than simulating step by step and incrementing counter
+
+3. largest_perimeter_triangle (leetcode-976)
+approach: sort the array, take the max 3 values and check if they meet the triangle inequality theorem criteria, if not, take the next 3 values and keep continuing till you reach the min 3 values
+tips: none
