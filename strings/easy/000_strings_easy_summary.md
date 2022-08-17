@@ -19,3 +19,7 @@ tips: None
 5. ransom_note (leetcode-383)
 approach: use a hashmap to store the characters of magazine string with their respective count, now loop through the characters in ransomnote string and decrement the count from the magazine hashmap, if any char is not found, return false, return true if all chars are found; alternate approach is to convert both to sets and see if the ransomnote is a subset of magazine
 tips: None
+
+6. check_if_one_string_swap_can_make_strings_equal (leetcode-1790)
+approach: loop through each char, checking for equality and counting mismatches, on first mismatch store the index/mismatching chars, on second mismatch check if it is swappable with chars from first mismatch, if not return false, if there is any more mismatch also return a false immediately - at the end if there is no mismatch or 2 mismatches, return true else false
+tips: don't forget the edge case of one mismatching character
