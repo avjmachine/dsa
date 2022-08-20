@@ -11,3 +11,7 @@ tips: use built-in functions to count set bits and get the no. of steps to divid
 3. largest_perimeter_triangle (leetcode-976)
 approach: sort the array, take the max 3 values and check if they meet the triangle inequality theorem criteria, if not, take the next 3 values and keep continuing till you reach the min 3 values
 tips: none
+
+4. check_if_it_is_a_straight_line (leetcode-1232)
+approach: use slope comparison - slopes at all points must be equal
+tips: to avoid division by zero - use multiplication form by rearranging the slope equality equation
