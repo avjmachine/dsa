@@ -5,3 +5,7 @@ approach: textbook algorithm, create left and right variables/pointers, divide s
 
 2. first_bad_version (leetcode-278)
 approach: use binary search, whenever API returns a mid/pivot as bad version, save it in a variable x and update right end as pivot-1 to search in the left older half, when API returns as good version, update left end as pivot+1 to search in right newer half, keep looping till left crosses over right, at the end return the variable x which was last saved as a bad version
+
+3. search_insert_position (leetcode-35)
+approach: use binary search, but after end of search while loop, if element is not found, return the pos where the target should go in
+tips: after end of while loop, return left/low instead of a complicated if/else
