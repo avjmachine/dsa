@@ -31,3 +31,7 @@ tips: rather than starting from in-between, start from the ends to avoid checkin
 8. average_salary_excluding_the_minimum_and_maximum_salary (leetcode-1089)
 approach: loop through each element, keep updating min and max salary, along with a cumulative sum, once end of loop is reached, calculate average by removing the min and max from both numerator and denominator
 tips: None
+
+9. move_zeroes (leetcode-238)
+approach: traverse the array counting no. of zeroes, and whenever a non-zero number is encountered copy it to x places backward, where x is the no. of zeroes encountered so far
+tips: None
