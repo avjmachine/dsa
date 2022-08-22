@@ -35,3 +35,7 @@ tips: None
 9. move_zeroes (leetcode-238)
 approach: traverse the array counting no. of zeroes, and whenever a non-zero number is encountered copy it to x places backward, where x is the no. of zeroes encountered so far
 tips: None
+
+10. remove_element (leetcode-27)
+approach: have 2 pointers, one traversing fast - one element at a time and checking if it matches the val to be removed, the second one slow, moving only when the element is not equal to the val, whenever element is same as val, it stays back at same place, waiting to copy the next valid element from the fast pointer
+tips: to save unnecessary copies when there are very few matches, one can also use make use of the requirement that the elements need not be in order, by just swapping with last element every time there is a match (partial swap is sufficient, since only earlier left side element is important, the later right side element can be ignored), and moving ahead only when there is no match with the val in question - the last few elements can be left untouched since they are not needed
