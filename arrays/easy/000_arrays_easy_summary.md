@@ -39,3 +39,6 @@ tips: None
 10. remove_element (leetcode-27)
 approach: have 2 pointers, one traversing fast - one element at a time and checking if it matches the val to be removed, the second one slow, moving only when the element is not equal to the val, whenever element is same as val, it stays back at same place, waiting to copy the next valid element from the fast pointer
 tips: to save unnecessary copies when there are very few matches, one can also use make use of the requirement that the elements need not be in order, by just swapping with last element every time there is a match (partial swap is sufficient, since only earlier left side element is important, the later right side element can be ignored), and moving ahead only when there is no match with the val in question - the last few elements can be left untouched since they are not needed
+
+11. remove_duplicates_from_sorted_array (leetcode-26)
+approach: use two pointers, one which moves along with array and checks for duplicates, and second one which stays back to copy the elements to the indices where duplicates are present
