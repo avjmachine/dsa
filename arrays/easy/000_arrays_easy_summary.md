@@ -42,3 +42,8 @@ tips: to save unnecessary copies when there are very few matches, one can also u
 
 11. remove_duplicates_from_sorted_array (leetcode-26)
 approach: use two pointers, one which moves along with array and checks for duplicates, and second one which stays back to copy the elements to the indices where duplicates are present
+tips: None
+
+12. check_if_n_and_its_double_exist (leetcode-1346)
+approach: (i)do a linear search for 2x & 0.5x for each element, or (ii)sort array first and then do a binary search for each element; (iii) use a set and search in the set
+tips: beware of corner case when element is 0, since 2x and 0.5x of 0 is 0
