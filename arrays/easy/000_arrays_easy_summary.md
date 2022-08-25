@@ -47,3 +47,7 @@ tips: None
 12. check_if_n_and_its_double_exist (leetcode-1346)
 approach: (i)do a linear search for 2x & 0.5x for each element, or (ii)sort array first and then do a binary search for each element; (iii) use a set and search in the set
 tips: beware of corner case when element is 0, since 2x and 0.5x of 0 is 0
+
+13. valid_mountain_array (leetcode-941)
+approach: keep ascending till a peak or end of array is reached, consider invalid if peak is at extreme end - index 0 or last index, then keep descending till the descending pattern is broken
+tips: beware of peak being at either ends of the array
