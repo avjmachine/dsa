@@ -51,3 +51,7 @@ tips: beware of corner case when element is 0, since 2x and 0.5x of 0 is 0
 13. valid_mountain_array (leetcode-941)
 approach: keep ascending till a peak or end of array is reached, consider invalid if peak is at extreme end - index 0 or last index, then keep descending till the descending pattern is broken
 tips: beware of peak being at either ends of the array
+
+14. replace_elements_with_greatest_element_on_right_side (leetcode-1299)
+approach: iterate through each element starting from right end and check for max (new greater element on immediate right, old element on immediate right), repeat till first element on left end is reached
+tips: do not forget to handle extreme end corner case with respective initialization
