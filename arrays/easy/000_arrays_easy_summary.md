@@ -55,3 +55,7 @@ tips: beware of peak being at either ends of the array
 14. replace_elements_with_greatest_element_on_right_side (leetcode-1299)
 approach: iterate through each element starting from right end and check for max (new greater element on immediate right, old element on immediate right), repeat till first element on left end is reached
 tips: do not forget to handle extreme end corner case with respective initialization
+
+15. sort_array_by_parity (leetcode-905)
+approach: use two pointers, one read and another write, read moves and checks for first odd number found and pulls write to this place, then continues ahead to an even number that can be swapped where write is placed, after swapping both move a step ahead; this continues till read ptr reaches end of array
+tips: use two pointers starting from both ends and moving towards centre till they cross, move both pointers based on even, odd and swap where required, similar to quick sort pattern
