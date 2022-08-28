@@ -59,3 +59,7 @@ tips: do not forget to handle extreme end corner case with respective initializa
 15. sort_array_by_parity (leetcode-905)
 approach: use two pointers, one read and another write, read moves and checks for first odd number found and pulls write to this place, then continues ahead to an even number that can be swapped where write is placed, after swapping both move a step ahead; this continues till read ptr reaches end of array
 tips: use two pointers starting from both ends and moving towards centre till they cross, move both pointers based on even, odd and swap where required, similar to quick sort pattern
+
+16. height_checker (leetcode-1051)
+approach: easiest approach would be brute force, or the more efficient sort first and compare each element one by one. but looking at constraints would reveal that a counting sort like approach would work - create a count array and then have 1 pointer for the count array moving simultaneously with 2nd pointer for height array, only difference being that the 1st pointer would move internally within each element j times (where j is count of element in that index), compare at each step and increment mismatch count
+tips: make use of constraint info to arrive at counting sort like approach
