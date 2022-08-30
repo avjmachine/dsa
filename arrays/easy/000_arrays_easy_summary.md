@@ -63,3 +63,7 @@ tips: use two pointers starting from both ends and moving towards centre till th
 16. height_checker (leetcode-1051)
 approach: easiest approach would be brute force, or the more efficient sort first and compare each element one by one. but looking at constraints would reveal that a counting sort like approach would work - create a count array and then have 1 pointer for the count array moving simultaneously with 2nd pointer for height array, only difference being that the 1st pointer would move internally within each element j times (where j is count of element in that index), compare at each step and increment mismatch count
 tips: make use of constraint info to arrive at counting sort like approach
+
+17. find_all_numbers_disappeared_in_an_array (leetcode-441)
+approach: though O(n) time is easy to achieve, O(1) space along with it requires the constraint that all these numbers be positive, such that they can be negated to indicate/mark an index as present/absent - loop through each item and negate the item at the index indicated by the item (do a -1 to account for 0-index), finally consider the unmarked positive indices as missing
+tips: don't forget to check for safe index, since some numbers would already be negated, and beware of a number being double negated and falsely left out unnegated/positive
