@@ -1,0 +1,5 @@
+# Approach used for linked list problems - medium level
+
+1. linked_list_cycle_ii (leetcode - 142)
+approach: use arithmetic/algebra to find the fact that dist from head to joining point is same as clockwise distance from meeting point to joining point (l1 - head to joining, l2 joining to meeting clockwise, x - meeting to joining clockwise; since dist travelled by fastptr is 2x of slowptr, 2*(l1+l2) = (l1+l2)+(x+l2) => l1=x) after arriving at this fact, use fast and slow pointers to get to meeting point, then start one ptr from head and another from meeting point, the node where they meet is the joining point; alternate approach: make every node's next point to a temp node and during traversal if already a temp node is being pointed to, that is the joining node!
+tips: take care of null pointers while checking for validity
