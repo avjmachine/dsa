@@ -15,3 +15,7 @@ tips: handle the corner case of one or both linked lists being empty
 4. intersection_of_two_linked_lists (leetcode-160)
 approach: O(m*n) brute force approach would be to compare next of each element in one list with every element in the other element; O(m+n) approach would need two pointers starting from head of each list and moving one step at a time together, they would meet at the intersecting node in first pass if both lists are equal size, in case of unequal size they would meet in second pass if we move to the pointers to the beginning of the other list after reachingg end, in case of non-intersecting lists they would meet virtually at end of list with same null reference!
 tips: O(m+n) reference requires knowledge of fact that the two pointers moving on lists of unequal sizes would eventually meet at a common node if we compensate for the difference in lengths by making the pointers go to the other lists' head after finishing one round of traversal 
+
+5. palindrome_linked_list (leetcode-234)
+approach: find mid of the list using slow+fast pointer approach, and while traversing, reverse first(left) half of the list, then compare reversed first half with second half, traversing one element at a time; can also reverse second half instead of first one, but will require more traversal operations
+tips: none
