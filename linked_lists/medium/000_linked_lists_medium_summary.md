@@ -7,3 +7,7 @@ tips: take care of null pointers while checking for validity
 2. remove_nth_node_from_end_of_list (leetcode-19)
 approach: for simpler two pass solution, in first pass, find out length of element by traversal, in second pass reach to the nth element from end, again by traversal from start to node just before the one to be deleted, then for deleting switch next pointer from this previous node to the node after; for single pass solution, move first pointer to nth position, after reaching, now start moving second pointer also along with it till end of list - since, size = x+n, when first pointer reaches end/null, second pointer reaches the xth(nth from end) element, now delete and return the list
 tips: account for corner cases at front of list, end of list, also delete dangling pointers if needed
+
+3. add_two_numbers (leetcode-2)
+approach: add every node in list 1 to its corresponding node in l2, take the carry to the sum of the next nodes, repeat until both lists are completely traversed (if both lists are unequal in size, continue till the end of the longer list is reached) and also until carry is zero
+tips: can create dummy node and return next of dummy to avoid checks for first head node, do not forget the corner case of reaching end of both lists, but still having a non-zero carry, do create an extra node for such a carry in the result
