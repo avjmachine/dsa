@@ -23,3 +23,7 @@ tips: None
 6. check_if_one_string_swap_can_make_strings_equal (leetcode-1790)
 approach: loop through each char, checking for equality and counting mismatches, on first mismatch store the index/mismatching chars, on second mismatch check if it is swappable with chars from first mismatch, if not return false, if there is any more mismatch also return a false immediately - at the end if there is no mismatch or 2 mismatches, return true else false
 tips: don't forget the edge case of one mismatching character
+
+7. goal_parser_interpretation (leetcode-1678)
+approach: simple if-else
+tips: this is where one can be creative, by using incrementers in the if-else blocks to skip certain no. of characters
