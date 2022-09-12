@@ -11,3 +11,7 @@ tips: account for corner cases at front of list, end of list, also delete dangli
 3. add_two_numbers (leetcode-2)
 approach: add every node in list 1 to its corresponding node in l2, take the carry to the sum of the next nodes, repeat until both lists are completely traversed (if both lists are unequal in size, continue till the end of the longer list is reached) and also until carry is zero
 tips: can create dummy node and return next of dummy to avoid checks for first head node, do not forget the corner case of reaching end of both lists, but still having a non-zero carry, do create an extra node for such a carry in the result
+
+4. rotate_list (leetcode - 61)
+approach: get size of list, calculate no. of skips to be made based on size vs k, reach the new head by skipping that many nodes, cut off the new tail, while link old tail to head and return new head
+tips: use modulo operator to reduce no. of loops/skips to a max of size
